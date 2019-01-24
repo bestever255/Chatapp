@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="116dp"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        app:srcCompat="@drawable/whatsapp"/>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/username"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="185dp"
+        android:hint="Enter Username"
+        android:textColorHighlight="#004d40"
+        app:met_floatingLabelTextColor="#004d40"
+        app:met_underlineColor="#004d40"
+        app:met_baseColor="#004d40"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="43dp"
+        android:hint="Enter Password"
+        android:textColorHighlight="#004d40"
+        app:met_floatingLabelTextColor="#004d40"
+        app:met_underlineColor="#004d40"
+        app:met_baseColor="#004d40"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="149dp"
+        android:text="Sign up"
+        android:onClick="signUpLogin" />
+
+    <TextView
+        android:id="@+id/toggleLoginMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="123dp"
+        android:text="or,login"
+        android:clickable="true"
+        android:onClick="toggleLoginMode"/>
+
+</RelativeLayout>
